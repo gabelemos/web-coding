@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+    font-size: 100%;
+    background: rgb(28,16,224);
+    background: linear-gradient(90deg, rgba(28,16,224,1) 0%, rgba(67,67,203,1) 17%, rgba(62,90,213,1) 33%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    position: fixed;
+    bottom: 500px;
+    right: 500px;
+    font-family: 'Share', cursive;
+    font-size: 300%;
+    color: black;
+}
+
+small {
+    position: fixed;
+    bottom: 490px;
+    right: 490px;
+    font-family: 'Share', cursive;
+}
+
+.made_lemos {
+    font-family: 'Share', cursive;
+    font-size: 80%;
+    position: absolute;
+    bottom: 110px;
+    right: 28px;
+    text-shadow: 2px 2px 4px white;
+}
+
+.lemos_image {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    /*border-radius: 0.7rem;*/
+    box-shadow: 4px 4px 7px;
+}
+
+.window-header {
+    position: absolute;
+    bottom: 500px;
+    right: 450px;
+}
+
+/*.window-body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: -150px;
+    row-gap: 40px;
+    width: 600px;
+    height: 300px;
+    border-radius:0.3rem;
+}*/
+
+/*.theme light{
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+}*/
+
+.theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #243133;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+}
+
+.window{
+    position: relative;
+    bottom: -150px;
+	width: 550px;
+    height: 350px;
+	background: #243133;
+	border-radius: 0.7rem;
+	box-shadow: 5px 8px 12px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+
+}
+
+.window-body {
+    position:relative;
+    bottom:6px;
+    height:370px;
+}
+.window-header{
+    /*position:relative;*/
+    position:sticky;
+    z-index: 500;
+    height:40px;
+    background:rgb(77, 68, 68);
+    /*background:rgb(228, 227, 227);*/
+}
+.action-buttons{
+    position:absolute;
+    top:50%;
+    left:10px;
+    margin-top:-5px;
+    width:10px;
+    height:10px;
+    background:Crimson;
+    border-radius:50%;
+    box-shadow:
+        15px 0 0 Orange,
+        30px 0 0 LimeGreen;
+}
+
+.code-input, .code-output{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:1rem;
+    border:none;
+    font-family:'PT Mono', monospace;
+    font-size:0.8rem;
+    background:transparent;
+    white-space:pre-wrap;
+    line-height:1.5em;
+    word-wrap: break-word;
+}
+
+.code-input{
+    opacity:0.7;
+    margin:0;
+    color:rgb(255, 255, 255);
+    resize:none;
+}
+
+.code-output{
+    pointer-events:none;
+    z-index:3;
+    margin:0;
+    overflow-y:auto;
+}
+    code{
+        position:absolute;
+        top:0;
+        left:0;
+        margin:0;
+        padding:1rem;
+        display:block;
+        color:rgb(228, 228, 228);
+        font-size:0.8rem;
+        font-family:'Share', monospace;
+    }
+
+    .language{
+        display:inline-block;
+        position:absolute;
+        right:10px;
+        top:50%;
+        margin-top:-10px;
+        height:21px;
+        padding:0 1em;
+        text-align:right;
+        -webkit-appearance:none;
+        appearance:none;
+        border:none;
+        background:transparent;
+        font-family:'Share', sans-serif;
+        color:rgb(187, 187, 187);
+    }
+    
+    .language:before{
+        content:'asd';
+    }
+    
+    .language:hover{
+        border-radius: 0.5rem;
+        background:rgba(0,0,0,0.1);
+    }
+
+    .theme {
+        display:  inline-block;
+        position: absolute;
+        left: 255px;
+        bottom: 10px;
+        margin-top: -10px;
+        height: 21px;
+        padding: 0 0.5em;
+        text-align: center;
+        background: transparent;
+        border: none;
+        -webkit-appearance:none;
+        border-radius: 0.5rem;
+        box-shadow: none;
+        font-family: 'Share', sans-serif;
+        color: rgb(187, 187, 187);
+    }
+
+
+    .theme:hover{
+        border-radius: 0.5rem;
+        background: rgba(0,0,0,0.1);
+    }
